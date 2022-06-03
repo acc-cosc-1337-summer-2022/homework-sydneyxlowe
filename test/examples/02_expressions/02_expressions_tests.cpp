@@ -3,6 +3,7 @@
 #include "expressions.h"
 #include "casting.h"
 #include "constants.h"
+#include "multi_assign.h"
 
 TEST_CASE("Verify Test Configuration", "verification") {
 	REQUIRE(true == true);
@@ -31,4 +32,10 @@ TEST_CASE("Test function convert double to int to verify that it's a whole numbe
 TEST_CASE("Test get area function")
 {
 	REQUIRE(get_area_of_circle(10) == 314.159);
+}
+
+TEST_CASE("Test function multiply numbers")
+{
+	REQUIRE(multiply_numbers(10) == 50);
+	REQUIRE(multiply_numbers(2) == 10);
 }
