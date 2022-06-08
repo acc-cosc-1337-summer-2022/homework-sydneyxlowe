@@ -3,3 +3,5 @@
 //that accepts an int and returns void
 
 void display_numbers(int num);
+
+int sum_of_squares_for(int num);

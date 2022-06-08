@@ -1,8 +1,9 @@
 #include "do_while.h"
 
-int main() 
-{	
-	prompt_user();
-	
+
+int main()
+{
+	run_menu();
+
 	return 0;
 }

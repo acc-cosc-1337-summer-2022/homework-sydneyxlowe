@@ -21,3 +21,15 @@ void display_numbers(int num)
         cout<<i+1<<"\n";
     }
 }
+
+int sum_of_squares_for(int num)
+{
+    auto sum = 0;
+
+    for(int i = 0; i < num; i++)
+    {
+        sum += (i+1) * (i+1);
+    }
+
+    return sum;
+}

@@ -16,5 +16,24 @@ void prompt_user()
     while(choice == 'y' || choice == 'Y');
 }
 
+void display_menu()
+{
+    cout<<"1-Accounts rec\n";
+    cout<<"2-accounts pay\n";
+    cout<<"3-payroll\n";
+    cout<<"4-exit\n";
+}
+void run_menu()
+{
+    auto choice = 0;
+
+    do
+    {
+        display_menu();
+        cout<<"enter menu choice ";
+        cin>>choice;
+    }
+    while(choice != 4);
+}
 
 
